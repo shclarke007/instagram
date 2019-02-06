@@ -25,7 +25,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7', :require => 'bcrypt'
 # handle file upload
 gem 'paperclip', '~> 4.2'
 
@@ -53,6 +53,8 @@ group :development do
   gem "rubocop"
   gem "rubocop-rails_config"
   gem 'shoulda', '~> 3.6'
+  gem 'simplecov', require: false
+  gem 'simplecov-console', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end

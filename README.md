@@ -3,6 +3,13 @@ Instagram Challenge
 
 [![Build Status](https://travis-ci.org/learningtocode101/instagram.svg?branch=master)](https://travis-ci.org/learningtocode101/instagram)
 
+## User Story
+```
+User can sign up to web app - In progress
+User can sign in to web app - In progress
+User can post pictures
+User can add caption with pictures posted
+```
 ## Task
 
 Build Instagram: Simple huh!
@@ -11,16 +18,19 @@ Your challenge is to build Instagram using Rails. You'll need **users** who can 
 
 Bonus if you can add filters!
 
-## Code Quality
+## Tech Stack
+Rubocop - Linting  
+Travis - CI  
+Rails  
+Capybara & RSpec - Testing  
 
-For linting, you can use the `.rubocop.yml` in this repository (or your own!).
-You'll need these gems:
-
-```ruby
-gem "rubocop", "0.48.1"
-gem "rubocop-rails"
+## Quick Start
 ```
-
-You can also lint Javascript, CSS, and ERB — feel free to research this. These
-will help you to train yourself to produce cleaner code — and will often alert
-you to mistakes or mishaps!
+$ git clone https://github.com/learningtocode101/instagram
+cd instagram
+bundle install
+bin/rails db:create
+bin/rails db:migrate
+bundle exec rspec
+rails server -p 8080 #visit in browser //localhost:8080
+```

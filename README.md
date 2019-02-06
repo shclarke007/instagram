@@ -27,10 +27,10 @@ Capybara & RSpec - Testing
 ## Quick Start
 ```
 $ git clone https://github.com/learningtocode101/instagram
-cd instagram
-bundle install
-bin/rails db:create
-bin/rails db:migrate
-bundle exec rspec
-rails server -p 8080 #visit in browser //localhost:8080
+$ cd instagram
+$ bundle install
+$ bin/rails db:create
+$ bin/rails db:migrate
+$ bundle exec rspec
+$ rails server -p 8080 #visit in browser //localhost:8080
 ```

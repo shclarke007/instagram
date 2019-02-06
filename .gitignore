@@ -37,4 +37,4 @@
 */files/.DS_Store
 
 # Ignore coverage file
-/coverage/*/*
+/coverage

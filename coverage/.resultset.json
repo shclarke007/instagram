@@ -1,0 +1,103 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/helpers/posts_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/helpers/users_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/controllers/posts_controller.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        5,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/controllers/application_controller.rb": [
+        1,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/controllers/users_controller.rb": [
+        1,
+        1,
+        4,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/models/post.rb": [
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/models/application_record.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/models/user.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1549496385
+  }
+}

@@ -1,4 +1,9 @@
-<h1>Instagram</h1>
+<h1>Instapix</h1>
+
+ <% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+  <% end %>
+
 <%= @posts.each do |p| %>
   <%= image_tag p.image.url(:medium) %>
   <br>

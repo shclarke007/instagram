@@ -1,8 +1,6 @@
-require 'rails_helper.rb'
-
 RSpec.feature 'Creating post', type: :feature do
   scenario 'can create a post' do
-    visit '/'
+    visit '/posts'
     click_link 'New Post'
     attach_file('post_image', "spec/files/images/computer.jpg")
     fill_in 'post_caption', with: '#computertime'

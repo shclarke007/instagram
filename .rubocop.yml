@@ -63,7 +63,7 @@ Style/MixinUsage:
 
 Style/NumericLiterals:
   Exclude:
-    - 'db/schema'
+    - 'db/schema/*'
 
 # Code Style
 # ==========

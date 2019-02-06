@@ -61,6 +61,10 @@ Style/MixinUsage:
     - 'bin/update'
     - 'bin/setup'
 
+Style/NumericLiterals:
+  Exclude:
+    - 'db/schema'
+
 # Code Style
 # ==========
 #

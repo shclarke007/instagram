@@ -7,7 +7,6 @@ class UsersController < ApplicationController
     @user = User.create(signup_params)
     if @user.save
       flash[:alert] = "Sign up successful"
-      session[:user_id] = @user.id
       redirect_to posts_url 
     else
       render :index

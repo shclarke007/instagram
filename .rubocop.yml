@@ -50,6 +50,7 @@ Metrics/LineLength:
     - 'db/*'
     - 'Gemfile'
     - 'Rakefile'
+    - 'app/**/*'
 
 Metrics/BlockLength:
   Exclude:
@@ -63,7 +64,7 @@ Style/MixinUsage:
 
 Style/NumericLiterals:
   Exclude:
-    - 'db/schema/*'
+    - 'db/**/*'
 
 # Code Style
 # ==========

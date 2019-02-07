@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe UsersController, type: :controller do
 
-  describe "GET /new" do
+  describe "GET /index" do
     it "returns http success" do
-      get :new
+      get :index
       expect(response).to have_http_status(:success)
     end
     it 'instant of a user' do
@@ -12,12 +12,5 @@ RSpec.describe UsersController, type: :controller do
       expect(user).to be
     end
   end
-
-  describe "POST /create" do
-    it "returns http success" do
-      get :new
-      expect(response).to have_http_status(:success)
-    end
   
-  end
 end

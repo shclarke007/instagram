@@ -6,6 +6,7 @@ RSpec.feature 'Visits homepage', type: :feature do
     expect(page).to have_content('Password')
     expect(page).to have_content('Password confirmation')
   end
+  
   scenario 'User signs up' do
     visit '/'
     expect(page).to have_content('InstaPix')
@@ -26,13 +27,14 @@ RSpec.feature 'Visits homepage', type: :feature do
 
   scenario 'User can sign in' do
     visit '/'
-    expect(page).to have_content('InstaPix')
-    expect(page).to have_content('Email')
-    expect(page).to have_content('Password')
+    fill_in :user_email, with: 's@email.com'
+    fill_in :user_password, with: 'Bananas'
+    fill_in :user_password_confirmation, with: 'Bananas'
+    click_button("Create account")
+    visit '/'
     fill_in :sign_in_email, with: 's@email.com'
     fill_in :sign_in_password, with: 'Bananas'
     click_button 'Sign In'
-    expect(page.current_path).to eq('/posts')
-    expect(page).to have_content('Welcome back s@email.com')
+    expect(page.current_path).to eq('/sessions')
   end
 end

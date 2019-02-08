@@ -2,33 +2,40 @@
 <header>
     <h1>InstaPix</h1>
 </header>   
+  <div id="intro">
+    <h2>Ahoy!</h2>
+    <p>Sign up for an account to start posting and viewing pictures</p>
+  </div>
   <div class="sign_up_form">
-    <%= form_for @user do |f| %>
-      <%= f.label :email %>
-      <br>
-      <%= f.email_field :email %>
-      <br>
-      <%= f.label :password %>
-      <br>
-      <%= f.password_field :password %>
-      <br>
-      <%= f.label :password_confirmation %>
-      <br>
-      <%= f.password_field :password_confirmation%> 
-      <br> <br>
-      <%=f.submit "Create account"%>
-    <% end %>
+    <div id="sign_up_inputs">
+      <%= form_for @user do |f| %>
+        <%= f.label :email %>
+        <br>
+        <%= f.text_field :email %>
+        <br>
+        <%= f.label :password %>
+        <br>
+        <%= f.password_field :password %>
+        <br>
+        <%= f.label :password_confirmation %>
+        <br>
+        <%= f.password_field :password_confirmation%> 
+        <br> <br>
+        <%=f.submit "Create account"%>
+      <% end %>
+     </div>
   </div>
 
   <div class="sign_in_form">
-    <p><%= flash[:alert] %></p>
-    <%= form_tag sessions_path do |f| %>
-      <%= label_tag :email %> 
-      <%= text_field_tag :sign_in_email, params[:sign_in_email] %> 
-      <%= label_tag :password %> 
-      <%= password_field_tag :sign_in_password, params[:sign_in_password] %> 
-     
-      <%= submit_tag "Sign In" %>
-    <% end %>
+      <%= form_tag sessions_path do %>
+        <%= label_tag :email %> 
+        <%= text_field_tag :sign_in_email, params[:email] %> 
+
+        <%= label_tag :password %> 
+        <%= password_field_tag :sign_in_password %> 
+
+        <%= submit_tag "Sign In" %>
+      <% end %>
+      <p><%= notice %></p>
   </div>
 </div>

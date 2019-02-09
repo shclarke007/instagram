@@ -5,7 +5,7 @@
   <% end %>
 
 <%= @posts.each do |p| %>
-  <%= image_tag p.image.url(:medium) %>
+  <%= image_tag p.image(:medium) %>
   <br>
   <%= p.caption %>
   <br>

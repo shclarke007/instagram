@@ -1,16 +1,19 @@
-<h1>InstaPix</h1>
-<%= form_for @user do |f| %>
-  <%= f.label :email %>
-  <br>
-  <%= f.text_field :email %>
-  <br>
-  <%= f.label :password %>
-  <br>
-  <%= f.password_field :password %>
-  <br>
-  <%= f.label :password_confirmation %>
-  <br>
-  <%= f.password_field :password_confirmation%> 
-  <br> <br>
-  <%=f.submit "Create account"%>
-<% end %>
+<div class = "container">
+<header>
+    <h1>InstaPix</h1>
+</header>   
+  <div id="intro">
+    <h2>Ahoy!</h2>
+    <p>Sign up for an account to start posting and viewing pictures</p>
+  </div>
+  <div class="sign_up_form">
+    <div id="sign_up_inputs">
+      <%= render  'users/signup_form'%>
+     </div>
+  </div>
+
+  <div class="sign_in_form">
+      <%= render 'users/signin_form' %>
+      <p><%= notice %></p>
+  </div>
+</div>

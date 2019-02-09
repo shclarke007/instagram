@@ -1,19 +1,21 @@
 RSpec.feature 'Visits homepage', type: :feature do
-  scenario 'Has sign up form' do
-    visit '/'
-    expect(page).to have_content('InstaPix')
-    expect(page).to have_content('Email')
-    expect(page).to have_content('Password')
-    expect(page).to have_content('Password confirmation')
-  end
-  scenario 'User signs up' do
-    visit '/'
-    expect(page).to have_content('InstaPix')
-    fill_in :user_email, with: 'socks@yahoo.com'
-    fill_in :user_password, with: 'testing123'
-    fill_in :user_password_confirmation, with: 'testing123'
-    click_button("Create account")
+  scenario 'User signs up successfully' do
+    user_signup
     expect(page).to have_content('Sign up successful')
     expect(page.current_path).to eq('/posts')
   end
+  
+  scenario 'User can sign in successfully' do
+    user_signup
+    user_signin
+    expect(page.current_path).to eq('/posts')
+  end
+
+  scenario 'User cannot sign in with incorrect password' do
+    user_signup
+    incorrect_signin
+    expect(page.current_path).to eq('/')
+    expect(page).to have_content('Email or password is incorrect')
+  end
+
 end

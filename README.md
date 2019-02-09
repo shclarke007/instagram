@@ -3,20 +3,16 @@ Instagram Challenge
 
 [![Build Status](https://travis-ci.org/learningtocode101/instagram.svg?branch=master)](https://travis-ci.org/learningtocode101/instagram)
 
+## Purpose
+Build an Instagram clone where users can post pictures, comment and like pictures.      
+
 ## User Story
 ```
-User can sign up to web app - In progress
-User can sign in to web app - In progress
+User can sign up to web app
+User can sign in to web app
 User can post pictures
-User can add caption with pictures posted
+User can add caption with pictures posted - In porgress
 ```
-## Task
-
-Build Instagram: Simple huh!
-
-Your challenge is to build Instagram using Rails. You'll need **users** who can post **pictures**, write **comments** on pictures and **like** a picture. Style it like Instagram's website (or more awesome).
-
-Bonus if you can add filters!
 
 ## Tech Stack
 Rubocop - Linting  

@@ -8,34 +8,12 @@
   </div>
   <div class="sign_up_form">
     <div id="sign_up_inputs">
-      <%= form_for @user do |f| %>
-        <%= f.label :email %>
-        <br>
-        <%= f.text_field :email %>
-        <br>
-        <%= f.label :password %>
-        <br>
-        <%= f.password_field :password %>
-        <br>
-        <%= f.label :password_confirmation %>
-        <br>
-        <%= f.password_field :password_confirmation%> 
-        <br> <br>
-        <%=f.submit "Create account"%>
-      <% end %>
+      <%= render  'users/signup_form'%>
      </div>
   </div>
 
   <div class="sign_in_form">
-      <%= form_tag sessions_path do %>
-        <%= label_tag :email %> 
-        <%= text_field_tag :sign_in_email, params[:email] %> 
-
-        <%= label_tag :password %> 
-        <%= password_field_tag :sign_in_password %> 
-
-        <%= submit_tag "Sign In" %>
-      <% end %>
+      <%= render 'users/signin_form' %>
       <p><%= notice %></p>
   </div>
 </div>

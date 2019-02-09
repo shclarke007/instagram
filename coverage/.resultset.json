@@ -15,6 +15,7 @@
       ],
       "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/helpers/users_helper.rb": [
         1,
+        null,
         null
       ],
       "/Users/shaneil/Documents/Projects/week_8/weekend/instagram-challenge/app/controllers/posts_controller.rb": [
@@ -127,6 +128,6 @@
         null
       ]
     },
-    "timestamp": 1549721700
+    "timestamp": 1549723471
   }
 }
